@@ -1,0 +1,44 @@
+<odoo>
+    <data>
+        <record id="hms_doctor_form_view" model="ir.ui.view">
+            <field name="name">HMS Doctor Form View</field>
+            <field name="model">hms.doctor</field>
+            <field name="arch" type="xml">
+                <form string='Class'>
+                    <sheet>
+                        <group>
+                            <field name="first_name"/>
+                            <field name="last_name"/>
+                            <field name="image" widget='image' class="oe_avatar" options='{"preview_image":"image"}'/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hms_doctor_tree_view" model="ir.ui.view">
+            <field name="name">HMS Doctor Tree View</field>
+            <field name="model">hms.doctor</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="first_name"/>
+                    <field name="last_name"/>
+                </tree>
+
+            </field>
+        </record>
+
+        <record id="action_doctors" model="ir.actions.act_window">
+            <field name="name">Doctors</field>
+            <field name="res_model">hms.doctor</field>
+        </record>
+        <menuitem id="hms_root_menu" name="HMS"/>
+        <menuitem id="hms_root_doctor_data"
+                  name="Doctors"
+                  parent="hms_root_menu"
+                  action="action_doctors"
+        />
+
+    </data>
+
+
+</odoo>

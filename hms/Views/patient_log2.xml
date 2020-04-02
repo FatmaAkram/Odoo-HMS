@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+
+        <record id="patient_log_tree_view2" model="ir.ui.view">
+            <field name="name">Patient Log Tree View2</field>
+            <field name="model">patient.log2</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="create_uid"/>
+                    <field name="create_date"/>
+                    <field name="description"/>
+                    <field name="patient_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_patient_logs2" model="ir.actions.act_window">
+            <field name="name">Logs</field>
+            <field name="res_model">patient.log2</field>
+        </record>
+        <menuitem id="hms_root_menu" name="HMS"/>
+        <menuitem id="hms_root_log2"
+                  name="Logs"
+                  parent="hms_root_menu"
+                  action="action_patient_logs2"
+        />
+
+    </data>
+
+
+</odoo>

@@ -1,0 +1,60 @@
+<odoo>
+
+    <template id="hms_patient_template">
+        <t t-call="web.html_container">
+
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div style="display:flex;width:50%">
+                            <div style="float:left;width:50%">
+                                <h1 style="color:red;" >Patient Status Report</h1>
+                            </div>
+                             <div style="width:50%">
+                                <img  t-att-src="image_data_uri(o.image)" width="150px" height="150px" style="float:right"/>
+                            </div>
+                        </div>
+                        <div style="display:flex;width:50%">
+                            <div style="float:left;width:50%"  >
+                                <strong>Name:</strong> <span t-field="o.first_name"/> <span t-field="o.last_name"/><br/>
+                                <strong>Age:</strong> <span t-field="o.age"/><br/>
+                                <strong>Department:</strong> <span t-field="o.department_id"/><br/>
+                                <strong>Doctors:</strong> <span t-field="o.doctors_ids"/>
+                            </div>
+                            <div style="float:right;width:50%">
+                                <strong>Birth date :</strong> <span t-field="o.birth_date"/><br/>
+                                <strong>PCR:</strong> <span t-field="o.cr_ratio"/><br/>
+                                <strong>Blood Type :</strong> <span t-field="o.blood_type"/><br/>
+                                <strong>Email:</strong> <span t-field="o.email"/><br/>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 style="color:red;">Log History</h1>
+                            <table style="width:100%;">
+                                <thead style="background-color:#017aff; color:white">
+                                    <tr style="padding:5px">
+                                        <th>User</th>
+                                        <th>Date</th>
+                                        <th>Info</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="background-color:#e7ecff;">
+                                    <t t-foreach="o.log_ids" t-as="log">
+                                         <tr style="padding:5px">
+                                            <td><span t-field="log.create_uid" /></td>
+                                            <td><span t-field="log.create_date" /></td>
+                                            <td><span t-field="log.description" /></td>
+                                         </tr>
+                                    </t>
+                                </tbody>
+
+                        </table>
+                        </div>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

@@ -36,8 +36,8 @@
                   name="Doctors"
                   parent="hms_root_menu"
                   action="action_doctors"
+                  groups="hms_managers_group"
         />
-
     </data>
 
 

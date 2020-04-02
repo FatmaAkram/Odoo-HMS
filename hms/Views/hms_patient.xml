@@ -65,7 +65,9 @@
                                        widget="many2many_tags"
                                        attrs="{
                                        'readonly':[('department_id', '=', False)]
-                                       }"/>
+                                       }"
+                                       groups="hms_managers_group"
+                                />
                             </page>
                             <page string="Logs">
                                 <field name="log_ids"/>

@@ -20,5 +20,11 @@
             <field name="domain_force">[('create_uid','=',user.id)]</field>
             <field name="groups" eval="[(4,ref('hms_users_group'))]"/>
         </record>
+        <record id="all_patients_rule" model="ir.rule">
+            <field name="name">Manager View All Patients</field>
+            <field name="model_id" ref="model_hms_patient"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4,ref('hms_managers_group'))]"/>
+        </record>
     </data>
 </odoo>

@@ -28,7 +28,7 @@ class HmsPatient(models.Model):
     pcr = fields.Boolean()
     image = fields.Binary(string='Image')
     address = fields.Text()
-    age = fields.Integer(compute='_compute_age', store=True)
+    age = fields.Integer(compute='_compute_age')
     department_id = fields.Many2one(comodel_name="hms.department")
     department_capacity = fields.Integer(related="department_id.capacity")
     doctors_ids = fields.Many2many(comodel_name="hms.doctor")
@@ -82,9 +82,10 @@ class HmsPatient(models.Model):
     @api.depends('birth_date')
     def _compute_age(self):
         for record in self:
-            today = date.today()
-            record.age = today.year - record.birth_date.year -\
-                  ((today.month, today.day) <
-             (record.birth_date.month, record.birth_date.day))
+            if record.birth_date :
+                today = date.today()
+                record.age = today.year - record.birth_date.year -\
+                      ((today.month, today.day) <
+                 (record.birth_date.month, record.birth_date.day))
 
 

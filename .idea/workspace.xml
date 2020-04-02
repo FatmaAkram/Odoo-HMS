@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1d6e546-c257-413b-883c-9eacde597709" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hms/Models/hms_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/hms/Models/hms_patient.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hms/security/hms_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hms/security/hms_groups.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hms/Models/hms_patient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="11" />
+            <state relative-caret-position="39">
+              <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -26,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hms/security/hms_groups.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="264">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -84,7 +83,6 @@
         <option value="$PROJECT_DIR$/hms/Views/patient_log.xml" />
         <option value="$PROJECT_DIR$/hms/Views/patient_log2.xml" />
         <option value="$PROJECT_DIR$/hms/Views/hms_patient.xml" />
-        <option value="$PROJECT_DIR$/hms/Models/hms_patient.py" />
         <option value="$PROJECT_DIR$/hms/Models/__init__.py" />
         <option value="$PROJECT_DIR$/hms/Views/res_partner.xml" />
         <option value="$PROJECT_DIR$/hms/Models/res_partner.py" />
@@ -93,6 +91,7 @@
         <option value="$PROJECT_DIR$/hms/security/ir.model.access.csv" />
         <option value="$PROJECT_DIR$/hms/__manifest__.py" />
         <option value="$PROJECT_DIR$/hms/security/hms_groups.xml" />
+        <option value="$PROJECT_DIR$/hms/Models/hms_patient.py" />
       </list>
     </option>
   </component>
@@ -346,16 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hms/Models/hms_patient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hms/security/ir.model.access.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -372,8 +361,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hms/security/hms_groups.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hms/Models/hms_patient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
